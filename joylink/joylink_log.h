@@ -100,3 +100,4 @@ extern "C"
 #endif
 
 #endif /* __LOGGING_H__ */
+

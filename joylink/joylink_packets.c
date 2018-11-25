@@ -120,8 +120,8 @@ joylink_packet_server_auth_rsp(void)
 	auth.random_unm = 1;
     auth.timestamp = time(NULL);
     
-    log_debug("accesskey key:%s",
-            _g_pdev->jlp.accesskey);
+    log_debug("accesskey key:%s,timestamp(%u)",
+            _g_pdev->jlp.accesskey,auth.timestamp);
 
 	int len = joylink_encypt_server_rsp(
             _g_pdev->send_buff,
